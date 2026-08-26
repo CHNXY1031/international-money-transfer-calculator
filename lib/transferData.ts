@@ -1,5 +1,5 @@
 export const BASE_URL =
-  "https://international-money-transfer-calculator.vercel.app";
+  "https://international-money-transfer-calcul.vercel.app";
 
 export const RATE_SNAPSHOT_DATE = "2026-08-25";
 export const RATE_SOURCE =

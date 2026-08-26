@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import {
+  BASE_URL,
   buildComparisonText,
   estimateTransfers,
   getExchangeRate,
@@ -49,4 +50,28 @@ test("pSEO matrix pre-renders more than 200 valid route combinations", () => {
 
   assert.ok(params.length > 200);
   assert.equal(unique.size, params.length);
+});
+
+test("production URL and sitemap matrix remain fixed", () => {
+  const params = getStaticTransferParams();
+
+  assert.equal(
+    BASE_URL,
+    "https://international-money-transfer-calcul.vercel.app",
+  );
+  assert.equal(params.length + 1, 296);
+  assert.ok(
+    params.every(
+      ({ from, to, amount }) =>
+        (
+          BASE_URL +
+          "/transfer/" +
+          from +
+          "-to-" +
+          to +
+          "/" +
+          amount
+        ).startsWith(BASE_URL),
+    ),
+  );
 });

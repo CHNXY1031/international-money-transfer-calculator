@@ -54,7 +54,7 @@ across supported send currencies, receive currencies and five common amounts.
 ## SEO
 
 - Fixed production origin:
-  https://international-money-transfer-calculator.vercel.app
+  https://international-money-transfer-calcul.vercel.app
 - Dynamic metadata and canonical URLs
 - FAQPage and WebApplication JSON-LD
 - Generated sitemap.xml and robots.txt
