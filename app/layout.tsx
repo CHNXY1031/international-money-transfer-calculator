@@ -112,9 +112,10 @@ export default function RootLayout({
                 sending.
               </p>
             </div>
-            <p className="font-mono text-xs uppercase tracking-[0.16em]">
-              ECB snapshot · 25 AUG 2026
-            </p>
+            <div className="font-mono text-xs uppercase tracking-[0.16em] md:text-right">
+              <p>ECB snapshot · 25 AUG 2026</p>
+              <a href="https://uptime-pulse-saas.vercel.app/?utm_source=international-money-transfer-calculator&amp;utm_medium=referral&amp;utm_campaign=protected_by" target="_blank" rel="noopener noreferrer" className="mt-3 block text-[9px] normal-case tracking-normal text-paper/35 underline decoration-white/10 underline-offset-4 transition hover:text-mint">Protected by UptimePulse — Free Website &amp; SSL Monitor</a>
+            </div>
           </div>
         </footer>
       </body>
